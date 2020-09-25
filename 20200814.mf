@@ -1,0 +1,28 @@
+合资公司表单逻辑:如果选择了同步陕煤、回传易煤交易不可选并为否。
+                 如果选择了无、回传易煤交易可选。
+合资公司子流程流程启动逻辑:第一步识别易煤交易单号、风控BINID 
+                           第二步度配置表 配置表有两种情况忽略跳过
+                                                          找到发起流程
+                                                          抛出异常
+
+#### 单个合同状态改变,需要写sql 维护
+
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'E' where CONTRACTSTATE = '意向通过待双签';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'J' where CONTRACTSTATE = '补充协议已批准';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'Q' where CONTRACTSTATE = '正常关闭';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'F' where CONTRACTSTATE = '意向通过双签已提交';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'H' where CONTRACTSTATE = '补充协议待审批';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'A' where CONTRACTSTATE = '意向待审批';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'D' where CONTRACTSTATE = '双签草稿已提交';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'O' where CONTRACTSTATE = '异常关闭';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'C' where CONTRACTSTATE = '意向已提交';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'I' where CONTRACTSTATE = '补充协议已提交';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'M' where CONTRACTSTATE = '意向修改待审批';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'G' where CONTRACTSTATE = '已双签';
+UPDATE aws.BO_EU_CONTRACT SET CONTRACTSTATE = 'B' where CONTRACTSTATE = '双签待审批';
+
+
+##### 20200817
+
+1、风控需求_CCS合同流程（单个、变更、批量、业务线+合同）版本迭代 开始时间：20200817 -结束时间2020817】处理人：陆彪 
+2、易煤风控付款流程开发（易煤风控付款->补填付款）【开始时间：20200817-结束时间20200807】处理人：张宇 

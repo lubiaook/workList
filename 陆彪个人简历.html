@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>陆彪个人简历.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h3 id="%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86">个人简历</h3>
+<h4 id="%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF">基本信息</h4>
+<ul>
+<li>姓名:陆彪      联系电话:183218057573</li>
+<li>出生日期：19910112</li>
+<li>婚姻状况: 已婚</li>
+<li>毕业院校:湖南人文科技学院</li>
+<li>专业:电子信息工程</li>
+<li>学历: 全日制本科（2010~2014）</li>
+<li>个人优势：善于沟通、能独挡一面</li>
+<li>相关证件：PMP项目管理认证</li>
+<li>自我评定：
+<ul>
+<li>1、掌握java语言、熟练使用设计模式</li>
+<li>2、熟练使用springboot、mysql</li>
+<li>3、了解bpmn规范</li>
+<li>4、具备安卓应用开发能力</li>
+<li>5、能熟练操作Unix服务器、熟练使用常用服务器命令grep、tail、find、sed、tar</li>
+<li>6、熟练使用代码管理工具：git、svn等</li>
+</ul>
+</li>
+</ul>
+<h4 id="%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86">工作经历</h4>
+<ul>
+<li>
+<p>上海瑞茂通供应链管理有限公司  2017-08~ 至今</p>
+<ul>
+<li>所在部门：易煤网技术部 Java 开发工程师</li>
+<li>工作内容：
+<ol>
+<li>企业OA系统技术选型、开发（北京炎黄盈动BPMN OA）</li>
+<li>企业内部系统开发维护</li>
+<li>对接资金系统、SAP</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>上海响泉金融信息服务有限公司  2016-10~ 201707</p>
+<ul>
+<li>所在部门：技术部 安卓高级开发工程师</li>
+<li>工作内容：
+<ol>
+<li>负责宜泉资本理财APP开发</li>
+<li>负责安卓平板开发</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>上海合星金融信息服务有限公司  2014-10~ 2016~10</p>
+<ul>
+<li>所在部门： 技术部移动端项目负责人</li>
+<li>工作内容：
+<ol>
+<li>项目技术选型</li>
+<li>关键模块开发</li>
+<li>进度、需求把控</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF">项目信息</h4>
+<ul>
+<li>
+<p>AWSPASS OA系统开发（二次开发）2018-03-至今</p>
+<ul>
+<li>使用技术
+<ul>
+<li>bpmn流程管理体系:事件、 网关、信号等</li>
+<li>java、spring mvc、springboot、mysql、js</li>
+</ul>
+</li>
+<li>工作内容
+<ul>
+<li>参加项目经理完成需求梳理、项目进度把控、任务分配等</li>
+<li>对接外部系统：SAP、九恒星资金系统、内部云控小贷系统、交易系统等</li>
+<li>流程部署、迭代，系统测试、用户培训、系统维护。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>供应链金融财务核算系统 2017-08 ~ 2018-03</p>
+<ul>
+<li>项目描述
+<ul>
+<li>根据业务需求对公司，对业务流录入。发票信息管理。业务报表导入导出。</li>
+</ul>
+</li>
+<li>使用技术
+<ul>
+<li>spring boot、 mysql</li>
+</ul>
+</li>
+<li>工作内容
+<ul>
+<li>根据产品PRD完成开发</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>怡泉资本APP 开发迭代 2016-10 ~ 201707</p>
+<ul>
+<li>使用技术
+<ul>
+<li>MVP 、MVC、okhttp</li>
+</ul>
+</li>
+<li>工作内容
+<ul>
+<li>负责App软件研发工作</li>
+<li>公司内部项目需求文档编写</li>
+<li>学习和眼镜新技术满足客户需求</li>
+<li>根据开发开发中的疑惑对产品提出改进建议</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>理财屋APP开发、迭代  2014-10 ~ 201607</p>
+<ul>
+<li>项目描述
+<ul>
+<li>理财屋是理财屋系通江投资集团旗下上海合星金融信息服务有限公司创建并运营。app具有以下功能
+1、支持购买定期理财产品，P2P/票据/保理等；
+2、支持红包支付；
+3、支持账户余额理财，低门槛高收益；
+4、通过手机提现，管理银行卡；
+5、查询个人资产账户信息；
+6、查询交易记录以及回款情况</li>
+</ul>
+</li>
+<li>使用技术
+<ul>
+<li>MVC  volley</li>
+</ul>
+</li>
+<li>工作内容
+<ul>
+<li>1、负责app端接口文档编写</li>
+<li>2、与产品经理进行需求评审，以及需求细化。</li>
+<li>3、app进度排期；</li>
+<li>4、android App框架的搭建及功能实现；</li>
+<li>5、对产品持续追踪，修复bug，提升用户体验</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
